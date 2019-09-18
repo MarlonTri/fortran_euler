@@ -1,0 +1,1 @@
+g95 euler.f95 -o out.o && out.o
