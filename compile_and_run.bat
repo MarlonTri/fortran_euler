@@ -1,3 +1,3 @@
-set ignore=
+set ignore=16
 cd build 
-python ../make.py    && call run.bat
+python ../make.py  %ignore%   && call run.bat

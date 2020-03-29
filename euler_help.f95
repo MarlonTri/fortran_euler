@@ -2,6 +2,17 @@ module euler_help
 implicit none
 contains
 
+function factorial(n)
+	implicit none
+	
+	integer(kind = 8) :: factorial,n,i
+	i = 2
+	factorial = 1
+	do while (i .LE. n)
+		factorial  = factorial * i
+		i = i + 1
+	end do
+end function factorial
 
 logical function is_palin(n)
 	implicit none

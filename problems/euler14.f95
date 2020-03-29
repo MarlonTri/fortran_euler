@@ -31,11 +31,6 @@ function euler14 ()
 	n=2
 	i=2
 	
-	!do while (i<20)
-	!!print*,i,"  ",collatz(i),NEW_LINE('A')
-	!i = i + 1
-	!end do
-	
 	do while (n<1000000)
 		if (collatz(n)>m) then
 			euler14 = n
