@@ -2,6 +2,7 @@ module euler_help
 implicit none
 contains
 
+
 logical function is_palin(n)
 	implicit none
 	
