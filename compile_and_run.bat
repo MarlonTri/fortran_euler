@@ -1,1 +1,3 @@
-g95 euler.f95 -o out.o && out.o
+set ignore=
+cd build 
+python ../make.py    && call run.bat
