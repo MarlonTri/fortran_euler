@@ -19,7 +19,7 @@ end program euler_main"""
 with open("euler_main.f95","w") as f:
     f.write(program)
 
-cmd = ("g95 -o a.out ../euler_help.f95 "+" ".join([f"../problems/{e}.f95" for e in eulers]) +
+cmd = ("g95 -ftrace=full -o a.out ../euler_help.f95 "+" ".join([f"../problems/{e}.f95" for e in eulers]) +
        " euler_main.f95 && a.out")
 
 with open("run.bat","w") as f:
